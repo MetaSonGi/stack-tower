@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>타워 스택 — 원터치 하이퍼캐주얼</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="hud">
+  <div class="score-box"><span id="score">0</span><span class="label">층</span></div>
+  <div class="best-box">최고 <span id="best">0</span>층</div>
+</div>
+<canvas id="game"></canvas>
+<p class="hint">화면을 터치하면 블록이 떨어집니다</p>
+<div id="overlay" class="overlay hidden">
+  <div class="overlay-box">
+    <h1>🗼 <span id="finalScore">0</span>층!</h1>
+    <p id="newBest" class="hidden">🎉 최고 기록 경신!</p>
+    <button id="againBtn" class="btn">↺ 다시 쌓기</button>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
